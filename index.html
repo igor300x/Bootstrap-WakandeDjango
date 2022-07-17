@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Wakande Django</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="index.css">
+   
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-md">    <img class="navbar-brand"
+    src="https://mimo.app/i/wakande.png" width="220" height="80"> </nav>
+  <div class="container-fluid bg-light"> 
+   <div class="row p-3">
+    <div class="col-12">
+     <h4 class="text-uppercase">Order your Django</h4>
+    </div>
+   </div>
+   <div class="row p-3">
+    <div class="col-12">
+     <h6>1. Django Burger</h6>
+     <p>Ranch-inspired eatery, serving up gourmet burgers.</p>
+       <div class="container-fluid ">
+          <div class="row text-center">
+              <div class="col">
+       <div class="card m-2">
+      <div class="card-header">MALIBU</div>
+      <img class="card-img-top"  src="https://c4.wallpaperflare.com/wallpaper/932/54/455/hamburger-french-fries-fast-food-wallpaper-preview.jpg" alt="burgers">
+     
+      <div class="card-footer text-center">$ 22</div>
+     <p><strong>Quantity:</strong> <span id="number1">1</span></p><a
+      href="javascript:add(-1)" class="btn btn-danger btn-sm">Remove -1</a> <a
+      href="javascript:add(1)" class="btn btn-success btn-sm">Add +1</a>
+      </div>
+      </div>
+    <div class="col">
+       <div class="card m-2">
+        <div class="card-header">DOMINATOR</div>
+         <img class="card-img-top"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaz0wBLq215JJOuP4l8XhDQ7HoIdhCfacSqw&usqp=CAU" alt="burguer">
+  
+    <div class="card-footer text-center">$ 24</div>
+   <p><strong>Quantity:</strong> <span id="2">1</span></p><a
+      href="javascript:bb(-1)" class="btn btn-danger btn-sm">Remove -1</a> <a
+      href="javascript:bb(1)" class="btn btn-success btn-sm">Add +1</a>
+      </div>
+      </div>
+        <div class="col">
+       <div class="card m-2"height="100" >
+      <div class="card-header">CALIFORNIA</div>
+      <img class="card-img-top"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIMtWjSYkIiXuAFPa6Kb94ShCtMb09SNsAeQ&usqp=CAU" alt="burguer" h>
+      
+   <div class="card-footer text-center" >$ 23</div>
+   <p><strong>Quantity:</strong> <span id="3">1</span></p><a
+      href="javascript:cc(-1)" class="btn btn-danger btn-sm">Remove -1</a> <a
+      href="javascript:cc(1)" class="btn btn-success btn-sm">Add +1</a>
+      </div>
+      </div>
+        <div class="col">
+       <div class="card m-2">
+       <div class="card-header">DJANGO</div>
+         <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVKOb-wMizQLqr_lmbhxJSPAQPTOVD2t8flg&usqp=CAU" alt="burguer">
+         
+      <div class="card-footer text-center">$ 25</div>
+   <p><strong>Quantity:</strong> <span id="4">1</span></p><a
+      href="javascript:dd(-1)" class="btn btn-danger btn-sm">Remove -1</a> <a
+      href="javascript:dd(1)" class="btn btn-success btn-sm">Add +1</a>
+      </div>
+      </div>
+    </div>
+   </div>
+   <div class="row p-3 mt-5">
+    <div class="col-12 text-center"> <button
+      class="btn btn-success btn-lg">Check out </button> </div>
+   </div>
+   <div class="row p-3">
+    <div class="col-12">
+     <p class="text-center">Wakande © 2022</p>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   var currentValue = 1;
+   var add = function(valueToAdd) {
+    currentValue += valueToAdd;
+    if (currentValue < 1) {
+     currentValue = 0;
+    }
+    document.getElementById('number1').innerHTML = currentValue;
+   };
+   var currentValue = 1;
+   var bb = function(valueToAdd) {
+    currentValue += valueToAdd;
+    if (currentValue < 1) {
+     currentValue = 0;
+    }
+    document.getElementById('2').innerHTML = currentValue;
+   };
+   var currentValue = 0;
+   var cc= function(valueToAdd) {
+    currentValue += valueToAdd;
+    if (currentValue < 0) {
+     currentValue = 0;
+    }
+    document.getElementById('3').innerHTML = currentValue;
+   };
+   var currentValue = 0;
+   var dd= function(valueToAdd) {
+     currentValue += valueToAdd;
+     if (currentValue < 0) {
+       currentValue = 0
+       1;
+     }
+     document.getElementById('4').innerHTML = currentValue;
+   };
+  </script>
+ </body>
+</html>

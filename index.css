@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  
+}
+.card m-2{height:80px ;
+  width: 140px;
+  border-radius: 5px;
+  
+}
+.card-header{
+  
+  padding: 6px;
+}
+.col{
+  width: 90%;
+  padding:1px;
+}
